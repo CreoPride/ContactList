@@ -11,6 +11,13 @@
 		D10CA60328412AAD003A33F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CA60228412AAD003A33F1 /* ContentView.swift */; };
 		D10CA60528412AB0003A33F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10CA60428412AB0003A33F1 /* Assets.xcassets */; };
 		D10CA60828412AB0003A33F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10CA60728412AB0003A33F1 /* Preview Assets.xcassets */; };
+		D10CA61028412B90003A33F1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CA60F28412B90003A33F1 /* Person.swift */; };
+		D10CA61328412BAE003A33F1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CA61228412BAE003A33F1 /* DataManager.swift */; };
+		D10CA617284133B8003A33F1 /* ShortContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CA616284133B8003A33F1 /* ShortContactsListView.swift */; };
+		D10CA61928413656003A33F1 /* FullContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CA61828413656003A33F1 /* FullContactsListView.swift */; };
+		D10CA61C284140FC003A33F1 /* DetailContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CA61B284140FC003A33F1 /* DetailContactView.swift */; };
+		D10CA61E28414D2B003A33F1 /* TextCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CA61D28414D2A003A33F1 /* TextCellView.swift */; };
+		D10CA620284153AF003A33F1 /* ImageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CA61F284153AF003A33F1 /* ImageCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		D10CA60228412AAD003A33F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D10CA60428412AB0003A33F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D10CA60728412AB0003A33F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D10CA60F28412B90003A33F1 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D10CA61228412BAE003A33F1 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D10CA616284133B8003A33F1 /* ShortContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortContactsListView.swift; sourceTree = "<group>"; };
+		D10CA61828413656003A33F1 /* FullContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullContactsListView.swift; sourceTree = "<group>"; };
+		D10CA61B284140FC003A33F1 /* DetailContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactView.swift; sourceTree = "<group>"; };
+		D10CA61D28414D2A003A33F1 /* TextCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCellView.swift; sourceTree = "<group>"; };
+		D10CA61F284153AF003A33F1 /* ImageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +65,11 @@
 		D10CA5FF28412AAD003A33F1 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				D10CA60028412AAD003A33F1 /* ContactListApp.swift */,
-				D10CA60228412AAD003A33F1 /* ContentView.swift */,
-				D10CA60428412AB0003A33F1 /* Assets.xcassets */,
+				D10CA60E28412B90003A33F1 /* Models */,
+				D10CA61128412BAE003A33F1 /* Services */,
+				D10CA61428412C63003A33F1 /* Views */,
+				D10CA61528412C71003A33F1 /* App */,
+				D10CA61A284138FB003A33F1 /* Resources */,
 				D10CA60628412AB0003A33F1 /* Preview Content */,
 			);
 			path = ContactList;
@@ -65,6 +81,51 @@
 				D10CA60728412AB0003A33F1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D10CA60E28412B90003A33F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D10CA60F28412B90003A33F1 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D10CA61128412BAE003A33F1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D10CA61228412BAE003A33F1 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D10CA61428412C63003A33F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D10CA60228412AAD003A33F1 /* ContentView.swift */,
+				D10CA616284133B8003A33F1 /* ShortContactsListView.swift */,
+				D10CA61828413656003A33F1 /* FullContactsListView.swift */,
+				D10CA61B284140FC003A33F1 /* DetailContactView.swift */,
+				D10CA61D28414D2A003A33F1 /* TextCellView.swift */,
+				D10CA61F284153AF003A33F1 /* ImageCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D10CA61528412C71003A33F1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D10CA60028412AAD003A33F1 /* ContactListApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D10CA61A284138FB003A33F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D10CA60428412AB0003A33F1 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +198,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10CA61028412B90003A33F1 /* Person.swift in Sources */,
+				D10CA61328412BAE003A33F1 /* DataManager.swift in Sources */,
 				D10CA60328412AAD003A33F1 /* ContentView.swift in Sources */,
+				D10CA61928413656003A33F1 /* FullContactsListView.swift in Sources */,
+				D10CA61E28414D2B003A33F1 /* TextCellView.swift in Sources */,
+				D10CA61C284140FC003A33F1 /* DetailContactView.swift in Sources */,
+				D10CA620284153AF003A33F1 /* ImageCellView.swift in Sources */,
+				D10CA617284133B8003A33F1 /* ShortContactsListView.swift in Sources */,
 				D10CA60128412AAD003A33F1 /* ContactListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
