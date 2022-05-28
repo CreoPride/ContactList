@@ -15,7 +15,7 @@ struct ShortContactsListView: View {
         
         NavigationView {
             List(contactList, id: \.fullName) { person in
-                NavigationLink(destination: DetailContactView(contact: person)) {
+                NavigationLink(destination: DetailContactView(person: person)) {
                     Text(person.fullName)
                 }
             }
