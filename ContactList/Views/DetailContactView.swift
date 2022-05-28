@@ -28,6 +28,6 @@ struct DetailContactView: View {
 
 struct DetailContactView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailContactView(contact: Person(name: "Aaron", surname: "Johnson", email: "stop@mail.com", phoneNumber: "799998888333"))
+        DetailContactView(contact: Person.getContactList().first!)
     }
 }

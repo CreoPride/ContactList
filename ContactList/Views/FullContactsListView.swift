@@ -13,13 +13,16 @@ struct FullContactsListView: View {
     
     var body: some View {
         
-        List(contactList, id: \.fullName) { person in
-            Section(person.fullName) {
-                TextCellView(image: .phone, text: person.phoneNumber)
-                TextCellView(image: .email, text: person.email)
+        NavigationView {
+            List(contactList, id: \.fullName) { person in
+                Section(person.fullName) {
+                    TextCellView(image: .phone, text: person.phoneNumber)
+                    TextCellView(image: .email, text: person.email)
+                }
             }
+            .listStyle(.insetGrouped)
+            .navigationTitle("Detail List")
         }
-        .listStyle(.insetGrouped)
     }
 }
 

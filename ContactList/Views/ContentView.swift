@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        NavigationView {
+
             TabView {
                 ShortContactsListView(contactList: contactsList)
                     .tabItem {
@@ -26,8 +26,8 @@ struct ContentView: View {
                         Text("Numbers")
                     }
             }
-            .navigationTitle("Contact List")
-        }
+
+        
     }
 }
 

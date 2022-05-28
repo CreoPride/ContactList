@@ -13,12 +13,15 @@ struct ShortContactsListView: View {
     
     var body: some View {
         
-        List(contactList, id: \.fullName) { person in
-            NavigationLink(destination: DetailContactView(contact: person)) {
-                Text(person.fullName)
+        NavigationView {
+            List(contactList, id: \.fullName) { person in
+                NavigationLink(destination: DetailContactView(contact: person)) {
+                    Text(person.fullName)
+                }
             }
+            .listStyle(.plain)
+            .navigationTitle("Contact List")
         }
-        .listStyle(.plain)
     }
 }
 
