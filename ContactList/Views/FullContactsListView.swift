@@ -15,10 +15,10 @@ struct FullContactsListView: View {
         
         NavigationView {
             List(contactList, id: \.fullName) { person in
-                Section(person.fullName) {
-                    TextCellView(image: .phone, text: person.phoneNumber)
-                    TextCellView(image: .email, text: person.email)
-                }
+                Section(header: Text(person.fullName).font(.title3)) {
+                    Label(person.phoneNumber, systemImage: Contacts.phone.rawValue)
+                    Label(person.email, systemImage: Contacts.email.rawValue)
+                }.textCase(.none)
             }
             .listStyle(.insetGrouped)
             .navigationTitle("Detail List")

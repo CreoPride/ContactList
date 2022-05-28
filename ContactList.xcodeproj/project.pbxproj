@@ -16,8 +16,6 @@
 		D10CA617284133B8003A33F1 /* ShortContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CA616284133B8003A33F1 /* ShortContactsListView.swift */; };
 		D10CA61928413656003A33F1 /* FullContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CA61828413656003A33F1 /* FullContactsListView.swift */; };
 		D10CA61C284140FC003A33F1 /* DetailContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CA61B284140FC003A33F1 /* DetailContactView.swift */; };
-		D10CA61E28414D2B003A33F1 /* TextCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CA61D28414D2A003A33F1 /* TextCellView.swift */; };
-		D10CA620284153AF003A33F1 /* ImageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CA61F284153AF003A33F1 /* ImageCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +29,6 @@
 		D10CA616284133B8003A33F1 /* ShortContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortContactsListView.swift; sourceTree = "<group>"; };
 		D10CA61828413656003A33F1 /* FullContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullContactsListView.swift; sourceTree = "<group>"; };
 		D10CA61B284140FC003A33F1 /* DetailContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactView.swift; sourceTree = "<group>"; };
-		D10CA61D28414D2A003A33F1 /* TextCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCellView.swift; sourceTree = "<group>"; };
-		D10CA61F284153AF003A33F1 /* ImageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +102,6 @@
 				D10CA616284133B8003A33F1 /* ShortContactsListView.swift */,
 				D10CA61828413656003A33F1 /* FullContactsListView.swift */,
 				D10CA61B284140FC003A33F1 /* DetailContactView.swift */,
-				D10CA61D28414D2A003A33F1 /* TextCellView.swift */,
-				D10CA61F284153AF003A33F1 /* ImageCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,9 +196,7 @@
 				D10CA61328412BAE003A33F1 /* DataManager.swift in Sources */,
 				D10CA60328412AAD003A33F1 /* ContentView.swift in Sources */,
 				D10CA61928413656003A33F1 /* FullContactsListView.swift in Sources */,
-				D10CA61E28414D2B003A33F1 /* TextCellView.swift in Sources */,
 				D10CA61C284140FC003A33F1 /* DetailContactView.swift in Sources */,
-				D10CA620284153AF003A33F1 /* ImageCellView.swift in Sources */,
 				D10CA617284133B8003A33F1 /* ShortContactsListView.swift in Sources */,
 				D10CA60128412AAD003A33F1 /* ContactListApp.swift in Sources */,
 			);

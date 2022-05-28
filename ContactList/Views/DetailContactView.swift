@@ -9,25 +9,27 @@ import SwiftUI
 
 struct DetailContactView: View {
     
-    let contact: Person
+    let person: Person
     
     var body: some View {
         
         List {
             HStack {
                 Spacer()
-                ImageCellView(image: contact.image)
+                Image(systemName: person.image)
+                    .resizable()
+                    .frame(width: 100, height: 100)
                 Spacer()
             }
-            TextCellView(image: .phone, text: contact.phoneNumber)
-            TextCellView(image: .email, text: contact.email)
+            Label(person.phoneNumber, systemImage: Contacts.phone.rawValue)
+            Label(person.email, systemImage: Contacts.email.rawValue)
         }
-        .navigationTitle(contact.fullName)
+        .navigationTitle(person.fullName)
     }
 }
 
 struct DetailContactView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailContactView(contact: Person.getContactList().first!)
+        DetailContactView(person: Person.getContactList().first!)
     }
 }
